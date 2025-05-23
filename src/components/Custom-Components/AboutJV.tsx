@@ -84,7 +84,7 @@ const AboutJVSection = () => {
                       Open for Collaborations
                     </h4>
                     <p className="partnership-text">
-                      We are proud to be connected with India's most reputed institutes and educators. 
+                      We are proud to be connected with India&apos;s most reputed institutes and educators. 
                       Join our network through brand collaborations, faculty tie-ups, and affiliate partnerships.
                     </p>
                     <div className="partnership-types">

@@ -61,7 +61,7 @@ const AboutOwner = () => {
                       strong presence in Kota, Bhopal, Jabalpur, and now expanding nationwide.
                     </p>
                     <p className="story-highlight">
-                      His mission with JV Student Hub is to make it India's most student-friendly, accessible, 
+                      His mission with JV Student Hub is to make it India&apos;s most student-friendly, accessible, 
                       and impactful platform — completely free of cost.
                     </p>
                   </div>

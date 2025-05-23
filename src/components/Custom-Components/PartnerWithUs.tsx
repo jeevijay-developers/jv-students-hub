@@ -61,8 +61,8 @@ const PartnerWithUs = () => {
                 Partner With <span className="down-mark-line">JV Student Hub</span>
               </h2>
               <p className="section-subtitle mb-4">
-                Join hands with India's growing student support platform. 
-                Let's work together to empower students and transform education.
+                Join hands with India&apos;s growing student support platform. 
+                Let&apos;s work together to empower students and transform education.
               </p>
             </div>
 
@@ -91,7 +91,7 @@ const PartnerWithUs = () => {
                 <div className="row align-items-center">
                   <div className="col-lg-8">
                     <h4 className="contact-title">
-                      Let's Discuss Your Partnership
+                      Let&apos;s Discuss Your Partnership
                     </h4>
                     <p className="contact-text">
                       Ready to explore partnership opportunities? Our team is here to discuss 
