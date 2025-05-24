@@ -45,7 +45,7 @@ const HeaderFive = () => {
                             <div className="bd-header-logo">
                                 <Link href="/"><Image src={LogoImg} style={{ width: "100%", height: "auto" }} alt="logo" /></Link>
                             </div>
-                            <div className="bd-header-category d-none d-lg-block">
+                            {/* <div className="bd-header-category d-none d-lg-block">
                                 <div className="bd-category-btn">
                                     <i className="fa-solid fa-grid"></i> Category
                                 </div>
@@ -54,7 +54,7 @@ const HeaderFive = () => {
                                         <CategoryDropdown />
                                     </nav>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                         <div className="bd-header-menu">
                             <nav className="main-menu bd-mobile-menu-active d-none d-xl-block">

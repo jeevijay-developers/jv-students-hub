@@ -44,7 +44,7 @@ const HeaderTwo = () => {
                                 <div className="bd-header-logo">
                                     <Link href="/"><Image style={{ width: "100%", height: "auto" }} src={headerLogo} priority alt="logo" /></Link>
                                 </div>
-                                <div className="bd-header-category d-none d-lg-block">
+                                {/* <div className="bd-header-category d-none d-lg-block">
                                     <div className="bd-category-btn">
                                         <i className="fa-solid fa-grid"></i> Category
                                     </div>
@@ -62,7 +62,7 @@ const HeaderTwo = () => {
                                             </ul>
                                         </nav>
                                     </div>
-                                </div>
+                                </div> */}
                             </div>
                             <div className="bd-header-menu">
                                 <nav className="main-menu bd-mobile-menu-active d-none d-xl-block">

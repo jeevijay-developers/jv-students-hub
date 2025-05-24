@@ -1,9 +1,15 @@
 import AboutJVSection from '@/components/Custom-Components/AboutJV'
+import Wrapper from '@/layout/DefaultWrapper'
 import React from 'react'
 
 const page = () => {
   return (
-    <AboutJVSection />
+    <Wrapper>
+      <main>
+        <AboutJVSection />
+      </main>
+    </Wrapper>
+
   )
 }
 

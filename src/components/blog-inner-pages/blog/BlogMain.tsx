@@ -15,7 +15,7 @@ const BlogMain = () => {
     const { playVideo } = useVideoModal();
     return (
         <>
-            <Breadcrumbs breadcrumbTitle='Blog Standard' />
+            {/* <Breadcrumbs breadcrumbTitle='Blog Standard' /> */}
             {/* -- blog area start -- */}
             <section className="bd-blog-area section-space">
                 <div className="container">

@@ -74,7 +74,7 @@ const HeaderFour = () => {
                                 <div className="bd-header-logo">
                                     <Link href="/"><Image src={LogoImg} style={{ width: "100%", height: "auto" }} alt="logo" /></Link>
                                 </div>
-                                <div className="bd-header-category">
+                                {/* <div className="bd-header-category">
                                     <div className="bd-category-btn">
                                         <i className="fa-solid fa-grid"></i> Category
                                     </div>
@@ -92,7 +92,7 @@ const HeaderFour = () => {
                                             </ul>
                                         </nav>
                                     </div>
-                                </div>
+                                </div> */}
                             </div>
                             <div className="bd-header-menu">
                                 <nav className="main-menu bd-mobile-menu-active d-none d-xl-block">
