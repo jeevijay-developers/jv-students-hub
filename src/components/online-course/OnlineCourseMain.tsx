@@ -15,6 +15,7 @@ import NewBatchesSection from '../Custom-Components/NewBatchSection';
 import AboutJVSection from '../Custom-Components/AboutJV';
 import AboutOwner from '../Custom-Components/AboutOwner';
 import WhatWeOffer from '../Custom-Components/WhatWeOffer';
+import MindHealingSection from '../Custom-Components/MindHealingSection';
 
 const OnlineCourseMain = () => {
     return (
@@ -27,6 +28,7 @@ const OnlineCourseMain = () => {
             {/* <CourseAboutArea /> */}
             <OnlineCourseArea />
             <WhatWeOffer />
+            <MindHealingSection />
             <AboutOwner />
             {/* <CoursePricingPlanArea /> */}
             <TestimonialSliderOne />

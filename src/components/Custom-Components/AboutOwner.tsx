@@ -25,45 +25,84 @@ const AboutOwner = () => {
               <h2 className="section-title mb-4">
                 About the <span className="down-mark-line">Founder</span>
               </h2>
-            </div>
-
-            {/* Founder Profile */}
-            <div className="founder-profile mb-5">
-              <div className="row align-items-center">
-                <div className="col-lg-4 text-center mb-4 mb-lg-0">
-                  <div className="founder-image-wrapper">
-                    <div className="founder-image">
-                      {/* Replace with actual image path */}
-                      <Image 
-                        src="/assets/images/founders/1.png" 
-                        alt="Vikas Patel - Founder of JV Student Hub"
-                        width={300}
-                        height={300}
-                        className="rounded-circle"
-                      />
+            </div>            {/* Leadership Profiles */}
+            <div className="leadership-profiles mb-5">
+              {/* Founder Profile */}
+              <div className="profile-card mb-5">
+                <div className="row align-items-center">
+                  <div className="col-lg-4 text-center mb-4 mb-lg-0">
+                    <div className="founder-image-wrapper">
+                      <div className="founder-image">
+                        <Image 
+                          src="/assets/images/founders/1.png" 
+                          alt="Vikas Patel - Founder of JV Student Hub"
+                          width={300}
+                          height={300}
+                          className="rounded-circle"
+                        />
+                      </div>
+                      <div className="founder-designation">
+                        <h3 className="founder-name">Vikas Patel</h3>
+                        <p className="founder-title">Founder & CEO, Jeevijay Technologies</p>
+                      </div>
                     </div>
-                    <div className="founder-designation">
-                      <h3 className="founder-name">Vikas Patel</h3>
-                      <p className="founder-title">Founder & CEO, Jeevijay Technologies</p>
+                  </div>
+                  <div className="col-lg-8">
+                    <div className="founder-story">
+                      <p className="story-text">
+                        A visionary entrepreneur from Satna, Madhya Pradesh, who believes that every student 
+                        deserves access, opportunity, and support to build a bright future.
+                      </p>
+                      <p className="story-text">
+                        Vikas started his journey in Bangalore in 2020 with a vision to bridge the gap between 
+                        students and the support systems they need — coaching, mentorship, career guidance, 
+                        branding, and more. He has built Jeevijay Technologies into a trusted multi-city brand with a 
+                        strong presence in Kota, Bhopal, Jabalpur, and now expanding nationwide.
+                      </p>
+                      <p className="story-highlight">
+                        His mission with JV Student Hub is to make it India&apos;s most student-friendly, accessible, 
+                        and impactful platform — completely free of cost.
+                      </p>
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-8">
-                  <div className="founder-story">
-                    <p className="story-text">
-                      A visionary entrepreneur from Satna, Madhya Pradesh, who believes that every student 
-                      deserves access, opportunity, and support to build a bright future.
-                    </p>
-                    <p className="story-text">
-                      Vikas started his journey in Bangalore in 2020 with a vision to bridge the gap between 
-                      students and the support systems they need — coaching, mentorship, career guidance, 
-                      branding, and more. He has built Jeevijay Technologies into a trusted multi-city brand with a 
-                      strong presence in Kota, Bhopal, Jabalpur, and now expanding nationwide.
-                    </p>
-                    <p className="story-highlight">
-                      His mission with JV Student Hub is to make it India&apos;s most student-friendly, accessible, 
-                      and impactful platform — completely free of cost.
-                    </p>
+              </div>
+
+              {/* COO Profile */}
+              <div className="profile-card">
+                <div className="row align-items-center flex-lg-row-reverse">
+                  <div className="col-lg-4 text-center mb-4 mb-lg-0">
+                    <div className="founder-image-wrapper">
+                      <div className="founder-image">
+                        <Image 
+                          src="/assets/images/founders/3.png" 
+                          alt="Abhishek Pratap Singh - COO of JV Student Hub"
+                          width={300}
+                          height={300}
+                          className="rounded-circle"
+                        />
+                      </div>
+                      <div className="founder-designation">
+                        <h3 className="founder-name">Abhishek Pratap Singh</h3>
+                        <p className="founder-title">Chief Operating Officer</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-lg-8">
+                    <div className="founder-story">
+                      <p className="story-text">
+                        A seasoned education advisor and MBA professional, Abhishek Pratap Singh brings a 
+                        decade of expertise in student consultancy and management.
+                      </p>
+                      <p className="story-text">
+                        With deep insights into the needs of coaching city students, he ensures every solution 
+                        JV Student Hub offers is practical, empathetic, and empowering.
+                      </p>
+                      <p className="story-highlight">
+                        His expertise helps shape our services to meet real student needs while maintaining 
+                        operational excellence across all our initiatives.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -145,11 +184,24 @@ const AboutOwner = () => {
 
         .highlight-text {
           color: #07A169;
+        }        .leadership-profiles {
+          position: relative;
+        }
+
+        .profile-card {
+          padding: 2rem;
+          border-radius: 25px;
+          transition: all 0.3s ease;
+        }
+
+        .profile-card:hover {
+          background: rgba(7, 161, 105, 0.02);
         }
 
         .founder-image-wrapper {
           position: relative;
           margin-bottom: 2rem;
+          
         }
 
         .founder-image {
@@ -162,6 +214,12 @@ const AboutOwner = () => {
           padding: 2px;
           background: white;
           box-shadow: 0 10px 30px rgba(7, 161, 105, 0.2);
+          transition: all 0.3s ease;
+        }
+
+        .profile-card:hover .founder-image {
+          transform: scale(1.02);
+          box-shadow: 0 15px 40px rgba(7, 161, 105, 0.25);
         }
 
         .founder-designation {
