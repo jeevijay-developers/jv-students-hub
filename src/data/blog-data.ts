@@ -144,95 +144,109 @@ const blogData: IBlog[] = [
         date: "Aug 10 2024",
     },
     //blog sidebar recent data start
-    {
-        id: 14,
-        image: blogImg1,
-        title: "Exploring Online Learning Strategies",
-        authorName: "Alex Harper",
-        date: "10 Oct, 2024",
-    },
-    {
-        id: 15,
-        image: blogImg4,
-        title: "The Future of University Education",
-        authorName: "Sophie Bennett",
-        date: "25 Sep, 2024",
-    },
-    {
-        id: 16,
-        image: blogImg14,
-        title: "Kindergarten Learning Through Play",
-        authorName: "Michael Reed",
-        date: "05 Aug, 2024",
-    },
+{
+    id: 14,
+    image: blogImg1,
+    title: "Modern Coaching Trends: Online vs Offline in 2025",
+    authorName: "Riya Malhotra",
+    date: "12 Mar, 2025",
+},
+{
+    id: 15,
+    image: blogImg4,
+    title: "Is Traditional College Still Worth It in 2025?",
+    authorName: "Arjun Sethi",
+    date: "28 Feb, 2025",
+},
+{
+    id: 16,
+    image: blogImg14,
+    title: "Early Learning Hacks for Young Achievers",
+    authorName: "Sneha Verma",
+    date: "09 Jan, 2025",
+},
+
 
     //blog data
-    {
-        id: 17,
-        type: 'image',
-        image: blogImg15,
-        authorName: 'Alex',
-        date: '27 Oct 2022',
-        comments: 0,
-        buttonShow: true,
-        title: 'Empowering Students Through Innovative Learning Techniques',
-        description: 'Discover how innovative learning techniques empower students, enhancing their educational experience, improving engagement, and fostering a love for lifelong learning in today’s digital age.',
-        daynamicLink: true,
-        boxShadowClass: true
-    },
-    {
-        id: 18,
-        type: 'slider',
-        images: [
-            blogImg1,
-            blogImg2,
-            blogImg3,
-        ],
-        authorName: 'Alex',
-        date: '27 Oct 2022',
-        comments: 0,
-
-        title: 'Transforming Education with Technology in the Classroom',
-        description: 'Explore the transformative impact of technology in the classroom, offering educators new tools to enhance student learning and engagement while preparing them for future careers.',
-        buttonShow: true,
-        daynamicLink: true,
-        boxShadowClass: true
-    },
-    {
-        id: 19,
-        type: 'quote',
-        quote: 'I’m for truth no matter who tells it. I’m for justice no matter who it is for or against.',
-        authorName: 'Malcolm X',
-        boxShadowClass: false
-    },
-    {
-        id: 20,
-        type: 'video',
-        thumbnail: blogImg15,
-        title: 'The Importance of Emotional Intelligence in Education',
-        description: 'Understand the significance of emotional intelligence in education, helping students develop empathy, resilience, and strong interpersonal skills essential for success in academic and professional settings.',
-        buttonShow: true,
-        buttonLink: true,
-        boxShadowClass: true
-    },
-    {
-        id: 21,
-        type: 'audio',
-        title: 'Strategies for Fostering Critical Thinking in Students',
-        description: 'Learn effective strategies for fostering critical thinking skills in students, encouraging them to analyze, evaluate, and create solutions to complex problems they encounter daily.',
-        buttonShow: true,
-        buttonLink: true,
-        boxShadowClass: true
-    },
-    {
-        id: 22,
-        type: 'text',
-        title: 'Promoting Inclusivity in Education for Diverse Learners',
-        description: 'Discover ways to promote inclusivity in education, creating supportive environments for diverse learners and ensuring that all students receive the opportunities they deserve to thrive.',
-        buttonShow: true,
-        buttonLink: true,
-        boxShadowClass: true
-    },
+  {
+    id: 17,
+    type: 'image',
+    image: blogImg15,
+    authorName: 'Neha Verma',
+    date: '12 Mar 2025',
+    comments: 0,
+    buttonShow: true,
+    title: 'Top 7 Ways to Choose the Right Coaching Institute for JEE/NEET',
+    description: 'Choosing the right coaching can make or break your JEE/NEET journey. This guide highlights key factors like faculty, results, study material, and peer group to help you make an informed decision.',
+    daynamicLink: true,
+    boxShadowClass: true
+  },
+  {
+    id: 18,
+    type: 'image',
+    image: blogImg16,
+    authorName: 'Rohan Mehta',
+    date: '19 Mar 2025',
+    comments: 0,
+    buttonShow: true,
+    title: 'How to Get Coaching Scholarships in Kota',
+    description: 'Learn how to grab scholarship opportunities in Kota through entrance tests, financial aid, and special programs so that you can study without financial stress and focus entirely on your goals.',
+    daynamicLink: true,
+    boxShadowClass: true
+  },
+  {
+    id: 19,
+    type: 'image',
+    image: blogImg17,
+    authorName: 'Shruti Desai',
+    date: '25 Mar 2025',
+    comments: 0,
+    buttonShow: true,
+    title: 'Kota Hostel Life: What to Expect and How to Choose the Right One',
+    description: 'Kota isn’t just about studies—it’s where you’ll live and grow for years. This blog breaks down hostel types, facilities, food, and tips for finding a comfortable, focused environment.',
+    daynamicLink: true,
+    boxShadowClass: true
+  },
+  {
+    id: 20,
+    type: 'image',
+    image: blogImg18,
+    authorName: 'Aditya Kulkarni',
+    date: '3 Apr 2025',
+    comments: 0,
+    buttonShow: true,
+    title: 'How JV Student Hub Mentorship Can Boost Your Rank',
+    description: 'Get insights into how personalized mentorship, doubt-solving, and motivation at JV Student Hub have helped students push beyond limits and consistently improve their ranks.',
+    daynamicLink: true,
+    boxShadowClass: true
+  },
+  {
+    id: 21,
+    type: 'image',
+    image: blogImg19,
+    authorName: 'Simran Kaur',
+    date: '9 Apr 2025',
+    comments: 0,
+    buttonShow: true,
+    title: 'Top 5 Mistakes Students Make During Coaching – and How to Avoid Them',
+    description: 'Avoid the most common coaching blunders—from poor time management to ignoring self-study. This blog guides you with practical tips to stay on track and succeed.',
+    daynamicLink: true,
+    boxShadowClass: true
+  },
+  {
+    id: 22,
+    type: 'image',
+    image: blogImg20,
+    authorName: 'Aryan Bhatt',
+    date: '15 Apr 2025',
+    comments: 0,
+    buttonShow: true,
+    title: 'Mindset Mastery: How Our Healing Programs Help Students Beat Exam Stress',
+    description: 'Mental health is as important as academics. Learn how our unique healing sessions help students overcome anxiety, rebuild confidence, and perform with a calm, focused mind.',
+    daynamicLink: true,
+    boxShadowClass: true
+  },
+  
     //blog list data
     {
         id: 23,

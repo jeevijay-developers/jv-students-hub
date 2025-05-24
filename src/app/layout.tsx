@@ -37,6 +37,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css"></link>
+      </head>
       <body suppressHydrationWarning className={`body-bg ${roboto.variable} ${bigShoulders.variable}`}>
         <VideoProvider>
           <ReduxProvider>
@@ -47,6 +50,7 @@ export default function RootLayout({
             <GlobalVideoModal />
           </ReduxProvider>
         </VideoProvider>
+        <script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
       </body>
     </html>
   );

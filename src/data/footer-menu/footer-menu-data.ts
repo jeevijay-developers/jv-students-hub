@@ -38,18 +38,18 @@ export const CourseFooterMenuLinks = [
 
 // Modern schooling Data for footer sections
 export const UniversityFooterMenuLinks = [
-  {
-    title: 'Online Platform',
-    spacingClass: 'footer-1-col-2',
-    links: [
-      { name: 'About Us', href: '/about-university' },
-      { name: 'Our Programs', href: '/courses-grid-right' },
-      { name: 'Events', href: '/event' },
-      { name: 'Faculty Members', href: '/faculty-members' },
-      { name: 'Faculty Details', href: '/instructor/instructor-details' },
-      { name: 'Admission', href: '/apply-online' },
-    ],
-  },
+  // {
+  //   title: 'Online Platform',
+  //   spacingClass: 'footer-1-col-2',
+  //   links: [
+  //     { name: 'About Us', href: '/about-university' },
+  //     { name: 'Our Programs', href: '/courses-grid-right' },
+  //     { name: 'Events', href: '/event' },
+  //     { name: 'Faculty Members', href: '/faculty-members' },
+  //     { name: 'Faculty Details', href: '/instructor/instructor-details' },
+  //     { name: 'Admission', href: '/apply-online' },
+  //   ],
+  // },
   {
     title: 'Useful Links',
     spacingClass: 'footer-1-col-3',
@@ -128,18 +128,18 @@ export const ShopFooterMenuLinks = [
   
   // Modern schooling Data for footer sections
 export const CommonFooterMenuLinks = [
-  {
-    title: 'Online Platform',
-    spacingClass: 'footer-1-col-2',
-    links: [
-      { name: 'About Us', href: '/about-university' },
-      { name: 'Our Programs', href: '/courses-grid-right' },
-      { name: 'Events', href: '/event' },
-      { name: 'Instructor', href: '/instructor' },
-      { name: 'Instructor Details', href: '/instructor/instructor-details' },
-      { name: 'Admission', href: '/apply-online' },
-    ],
-  },
+  // {
+  //   title: 'Online Platform',
+  //   spacingClass: 'footer-1-col-2',
+  //   links: [
+  //     { name: 'About Us', href: '/about-university' },
+  //     { name: 'Our Programs', href: '/courses-grid-right' },
+  //     { name: 'Events', href: '/event' },
+  //     { name: 'Instructor', href: '/instructor' },
+  //     { name: 'Instructor Details', href: '/instructor/instructor-details' },
+  //     { name: 'Admission', href: '/apply-online' },
+  //   ],
+  // },
   {
     title: 'Useful Links',
     spacingClass: 'footer-1-col-3',
@@ -148,7 +148,7 @@ export const CommonFooterMenuLinks = [
       { name: 'Latest News', href: '/blog' },
       { name: 'FAQ’s', href: '/faq' },
       { name: 'Gallery', href: '/gallery' },
-      { name: 'Vision & Mission', href: '/mvs' },
+      // { name: 'Vision & Mission', href: '/mvs' },  
       { name: 'Sign In', href: '/sign-in' },
     ],
   },

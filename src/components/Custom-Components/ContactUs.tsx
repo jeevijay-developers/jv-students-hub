@@ -1,6 +1,8 @@
 'use client';
 import React, { useState } from 'react';
 import Image from 'next/image';
+import 'notyf/notyf.min.css';
+import { Notyf } from 'notyf';
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
@@ -22,6 +24,7 @@ const ContactUs = () => {
       [e.target.name]: e.target.value
     });
   };
+  let notify = new Notyf();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -43,10 +46,7 @@ const ContactUs = () => {
       const data = await response.json();
 
       if (data.success) {
-        setSubmitStatus({
-          type: 'success',
-          message: 'Thank you for your message. We will get back to you soon!'
-        });
+        notify.success("Sent Successfully 🔥");
         setFormData({
           name: '',
           email: '',
@@ -55,13 +55,10 @@ const ContactUs = () => {
           message: ''
         });
       } else {
-        throw new Error('Form submission failed');
+        notify.error("Error Submiting form "+ data.message);
       }
     } catch (error) {
-      setSubmitStatus({
-        type: 'error',
-        message: 'Something went wrong. Please try again later.'
-      });
+      notify.error("Exceptional error in submiting form");
     } finally {
       setIsSubmitting(false);
     }
@@ -83,21 +80,20 @@ const ContactUs = () => {
               </p>
             </div>
 
-            <div className="row">
-              {/* Contact Information */}
-              <div className="col-lg-5 mb-4 mb-lg-0">
-                <div className="contact-info">
-                  <div className="info-card mb-4">
+            <div className="">              {/* Contact Information */}
+              <div className="contact-info-container">
+                <div className="contact-info d-flex justify-content-between flex-wrap">
+                  <div className="info-card">
                     <div className="icon">📍</div>
                     <h3>Our Location</h3>
-                    <p>123 Education Street, Satna, Madhya Pradesh, India</p>
+                    <p>123 Education Street, Kota, Rajasthan, India</p>
                   </div>
-                  <div className="info-card mb-4">
+                  <div className="info-card">
                     <div className="icon">📧</div>
                     <h3>Email Us</h3>
                     <p>support@jvstudenthub.com</p>
                   </div>
-                  <div className="info-card mb-4">
+                  <div className="info-card">
                     <div className="icon">📞</div>
                     <h3>Call Us</h3>
                     <p>+91 1234567890</p>
@@ -111,7 +107,7 @@ const ContactUs = () => {
               </div>
 
               {/* Contact Form */}
-              <div className="col-lg-7">
+              <div className="col-lg-12">
                 <div className="contact-form-wrapper">
                   <form onSubmit={handleSubmit}>
                     <div className="row">
@@ -147,6 +143,7 @@ const ContactUs = () => {
                           onChange={handleChange}
                           className="form-control"
                           placeholder="Phone Number"
+                          required
                         />
                       </div>
                       <div className="col-md-6 mb-4">
@@ -235,10 +232,14 @@ const ContactUs = () => {
           color: #666;
           max-width: 600px;
           margin: 0 auto;
+        }        .contact-info-container {
+          padding: 2rem;
+          width: 100%;
         }
 
         .contact-info {
-          padding: 2rem;
+          width: 100%;
+          gap: 2rem;
         }
 
         .info-card {
@@ -248,7 +249,8 @@ const ContactUs = () => {
           box-shadow: 0 6px 25px rgba(7, 161, 105, 0.12);
           border: 2px solid transparent;
           transition: all 0.3s ease;
-          margin-bottom: 2rem;
+          flex: 1;
+          min-width: 25 0px;
         }
 
         .info-card:hover {

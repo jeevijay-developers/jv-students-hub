@@ -154,12 +154,12 @@ const AboutOwner = () => {
 
         .founder-image {
           position: relative;
-          width: 300px;
-          height: 300px;
+          width: 310px;
+          height: 310px;
           margin: 0 auto;
           border: 4px solid #07A169;
           border-radius: 50%;
-          padding: 8px;
+          padding: 2px;
           background: white;
           box-shadow: 0 10px 30px rgba(7, 161, 105, 0.2);
         }
