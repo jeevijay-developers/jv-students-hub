@@ -17,7 +17,7 @@ const main_menu_data: MenuItem[] = [
     active: true,
     title: "Home",
     pluseIncon: true,
-    link: "#",
+    link: "/",
     previewImg: true,
     // submenus: [
     //   { title: "Online Course", link: "/online-course", previewImg: homeOneImg },
