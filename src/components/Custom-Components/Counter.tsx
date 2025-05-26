@@ -29,6 +29,7 @@ const AutoCounter: React.FC<AutoCounterProps> = ({
       }
     };
 
+    
     requestAnimationFrame(animate);
 
     return () => {
