@@ -9,6 +9,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import AutoCounter from './Counter';
+import Image from 'next/image';
 
 const EnhancedAboutJVSection = () => {
   const [animatedFeatures, setAnimatedFeatures] = useState<number[]>([]);
@@ -153,7 +154,7 @@ const EnhancedAboutJVSection = () => {
         {/* Hero Section */}
         <div className="hero-section text-center mb-5">
           <div className="hero-illustration mb-4">
-            <img className='banner-image' src="/assets/images/banner/jvBanner.svg" alt="JV Illustration" />
+            <Image width={500} height={500} className='banner-image' src="/assets/images/banner/jvBanner.svg" alt="JV Illustration" />
           </div>
 
           <div className="badge-wrapper mb-3">
@@ -188,7 +189,11 @@ const EnhancedAboutJVSection = () => {
           <h2 className="section-heading text-center ">🎯 Exams We Support</h2>
           <div className="exam-grid">
             {examCategories.map((exam, index) => (
-              <div key={exam.name} className="exam-card" style={{ '--exam-color': exam.color } as any}>
+              <div
+                key={exam.name}
+                className="exam-card"
+                style={{ '--exam-color': exam.color } as React.CSSProperties & Record<string, string>}
+              >
                 <div className="exam-name">{exam.name}</div>
                 <div className="exam-desc">{exam.desc}</div>
               </div>
@@ -273,7 +278,7 @@ const EnhancedAboutJVSection = () => {
             {testimonials.map((testimonial, index) => (
               <SwiperSlide key={index}>
                 <div className="testimonial-card">
-                  <img className="testimonial-avatar" src={testimonial.image} alt={testimonial.name} />
+                  <Image width={100} height={100} style={{marginBottom: "1rem", borderRadius:"50%", margin: "0 auto 1rem"}} src={testimonial.image} alt={testimonial.name} />
                   <div className="testimonial-content">
                     <p className="testimonial-quote">"{testimonial.quote}"</p>
                     <div className="testimonial-author">
@@ -764,14 +769,6 @@ const EnhancedAboutJVSection = () => {
         .testimonial-card:hover {
           transform: translateY(-5px);
           box-shadow: 0 15px 40px rgba(7, 161, 105, 0.2);
-        }
-
-        .testimonial-avatar {
-          margin-bottom: 1rem;
-          height: 100px;
-          width: 100px;
-          border-radius:50%;
-          margin: 0 auto 1rem;
         }
 
         .testimonial-quote {

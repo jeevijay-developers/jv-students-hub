@@ -2,9 +2,9 @@
 import React, { useState } from 'react';
 
 const FAQs = () => {
-  const [activeAccordion, setActiveAccordion] = useState(null);
+  const [activeAccordion, setActiveAccordion] = useState<number | null>(null);
 
-  const toggleAccordion = (index: any) => {
+  const toggleAccordion = (index: number): void => {
     setActiveAccordion(activeAccordion === index ? null : index);
   };
 

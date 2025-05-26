@@ -50,7 +50,6 @@ export default function RootLayout({
             <GlobalVideoModal />
           </ReduxProvider>
         </VideoProvider>
-        <script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
       </body>
     </html>
   );

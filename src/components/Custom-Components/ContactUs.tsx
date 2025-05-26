@@ -24,7 +24,7 @@ const ContactUs = () => {
       [e.target.name]: e.target.value
     });
   };
-  let notify = new Notyf();
+  const notify = new Notyf();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
